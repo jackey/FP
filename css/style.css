@@ -425,3 +425,140 @@ td,
 th {
   padding: 0;
 }
+
+/**
+ * End Normal.css
+ */
+
+/**
+ * Start custom stylesheet
+ */
+
+.nav-bar {
+    background-color: #111;
+    position: relative;
+}
+
+.nav-bar li {
+    float: left;
+    padding: 10px 15px;
+    border-right: 1px solid #333;
+}
+
+
+.nav-bar li:first-child {
+    border-left: 1px solid #333;
+}
+
+.nav-bar li a {
+    color: #fff;
+}
+
+.nav-bar li a:hover {
+    color:#ccc;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.user-nav {
+    position: absolute;
+    top: 0px;
+    right: 100px;
+}
+
+.panel-nav, .panel-nav li {
+    list-style-type: none;
+}
+
+.panel-nav {
+    background-color: #708890;
+    margin-top: -10px;
+}
+
+.panel-nav li {
+    width: 120px;
+    float: left;
+    text-align: center;
+    padding: 15px 0px;
+    margin-right: 10px;
+}
+
+.panel-nav li.active {
+    background-color: #90B890;
+}
+
+.panel-nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.panel-nav li a:hover {
+    color:#000;
+}
+
+html {
+    min-height: 100%;
+    background-color: #F0FFF0;
+}
+
+a.btn-danger {
+    color:#d9534f;
+    background-color: inherit;
+    border:none;
+}
+
+.login-form {
+}
+
+.login-form label {
+    color:#fff;
+}
+
+.login-form button {
+    width:44%;
+}
+
+.login-form button:last-child {
+    float: right;
+}
+
+html.login-page {
+    background-color: inherit;
+}
+
+html.login-page body{
+    background-color: #3498db;
+}
+
+html.login-page .panel-default {
+    background-color: inherit;
+    margin-top: 11%;
+    width: 418px;
+    margin-right: auto;
+    margin-left: auto;
+    border:none;
+}
+
+html.login-page .panel-default>.panel-heading {
+    background-color: inherit;
+    color: #fff;
+    border: none;
+    text-align: center;
+}
+
+img.img {
+    width:100%;
+}
+
+.btn-group-margin {
+    margin-top: 10px;
+}
+
+.btn-group-margin .btn{
+    margin-left:10px;
+}
+
+.btn-group-margin .btn:first-child {
+    margin-left: 0px;
+}
+
