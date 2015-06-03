@@ -167,6 +167,17 @@
                         .end()
                         .show();
                 });
+
+                $('.panel-nav li').hover(function () {
+                    $(this).siblings()
+                        .removeClass('active')
+                        .end()
+                        .addClass('active');
+                });
+
+                $('.user-nav li:first-child').click(function () {
+                    $(this).siblings().children('ul').toggleClass('hideme');
+                });
             });
         };
 

@@ -443,6 +443,7 @@ th {
     float: left;
     padding: 10px 15px;
     border-right: 1px solid #333;
+    list-style-type: none;
 }
 
 
@@ -452,6 +453,7 @@ th {
 
 .nav-bar li a {
     color: #fff;
+    text-decoration: inherit;
 }
 
 .nav-bar li a:hover {
@@ -464,6 +466,10 @@ th {
     position: absolute;
     top: 0px;
     right: 100px;
+}
+
+.user-nav li {
+    border:none;
 }
 
 .panel-nav, .panel-nav li {
@@ -562,3 +568,22 @@ img.img {
     margin-left: 0px;
 }
 
+.user-nav-sub {
+    position: absolute;
+    top: 39px;
+    z-index: 1111111;
+    background-color: #111;
+    padding-left: 0px;
+    left: 40px;
+    width: 146px;
+}
+
+.user-nav-sub li {
+    float: none;
+    list-style-type: none;
+    border: none !important;
+}
+
+.hideme {
+    display: none;
+}
