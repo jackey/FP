@@ -159,8 +159,8 @@
         //主导航链接动画效果
         _fp.menuNav = function () {
             _fp.attach(function () {
-                $('#header .nav-bar li').hover(function () {
-                    var index = $(this).index() + 1;
+                $('#header .nav-bar li a').hover(function () {
+                    var index = $(this).parent().index() + 1;
                     $('.panel-nav-' + index)
                         .siblings()
                         .hide()
@@ -177,22 +177,20 @@
         console.log('document ready or ajax successed');
     });
 
-    //FP.ajax.getHtml("http://api.test.wevent.cn:7002/4.2.0/User.Feed.List?user=28089",  {
-    //    success: function (data) {
-    //        console.log(data);
-    //    }
-    //});
-    //
-    //FP.ajax.getJSON("http://api.test.wevent.cn:7002/4.2.0/User.Feed.List?user=28089", {
-    //    success: function (data) {
-    //        console.log(data);
-    //    }
-    //});
+    FP.ajax.getHtml("http://api.test.wevent.cn:7002/4.2.0/User.Feed.List?user=28089",  {
+        success: function (data) {
+            console.log(data);
+        }
+    });
+
+    FP.ajax.getJSON("http://api.test.wevent.cn:7002/4.2.0/User.Feed.List?user=28089", {
+        success: function (data) {
+            console.log(data);
+        }
+    });
 
     FP.validator.showError();
 
     FP.menuNav();
-
-
 
 })(jQuery);
