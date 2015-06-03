@@ -26,12 +26,26 @@
 	</div>
     <div id="header-panel">
         <div class="wrapper">
-            <ul class="panel-nav clearfix">
+            <ul class="panel-nav panel-nav-1 clearfix">
                 <li class="active"><a href="" class="fc-1">子导航1</a></li>
                 <li><a href="" class="fc-2">子导航2</a></li>
                 <li><a href="" class="fc-3">子导航3</a></li>
                 <li><a href="" class="fc-4">子导航4</a></li>
                 <li><a href="" class="fc-5">子导航5</a></li>
+            </ul>
+            <ul class="panel-nav panel-nav-2 clearfix" style="display: none;">
+                <li class="active"><a href="" class="fc-1">子导航2-1</a></li>
+                <li><a href="" class="fc-2">子导航2-1</a></li>
+                <li><a href="" class="fc-3">子导航2-2</a></li>
+                <li><a href="" class="fc-4">子导航2-3</a></li>
+                <li><a href="" class="fc-5">子导航2-5</a></li>
+            </ul>
+            <ul class="panel-nav panel-nav-3 clearfix" style="display: none;">
+                <li class="active"><a href="" class="fc-1">子导航3-1</a></li>
+                <li><a href="" class="fc-2">子导航3-1</a></li>
+                <li><a href="" class="fc-3">子导航3-2</a></li>
+                <li><a href="" class="fc-4">子导航3-3</a></li>
+                <li><a href="" class="fc-5">子导航3-5</a></li>
             </ul>
         </div>
     </div>
@@ -304,6 +318,15 @@
                         <button class="btn btn-default form-alert">表单弹出框</button>
                     </div>
                 </div>
+
+                <form class="form form-horizontal">
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label" for="">日期验证</label>
+                        <div class="col-xs-9">
+                            <input type="text" class="form-control" placeholder="请输入日期" v-name="isDate"/>
+                        </div>
+                    </div>
+                </form>
                 <!-- JAVASCRIPT 功能组件结束-->
 			</div>
 		</div>
